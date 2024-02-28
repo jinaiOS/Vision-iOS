@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VisionPractice_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bZJ-X4-dHa">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gTh-gL-0bJ">
+                                        <rect key="frame" x="20" y="229.66666666666669" width="353" height="300.00000000000006"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="h1l-Ws-teI"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fhv-Z4-38H">
+                                        <rect key="frame" x="20" y="669" width="353" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Xgm-LB-MXF"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="capture"/>
+                                        <connections>
+                                            <action selector="captureButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ew7-yU-GMy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="gTh-gL-0bJ" firstAttribute="centerY" secondItem="bZJ-X4-dHa" secondAttribute="centerY" id="0ck-0z-fEL"/>
+                                    <constraint firstItem="gTh-gL-0bJ" firstAttribute="leading" secondItem="bZJ-X4-dHa" secondAttribute="leading" constant="20" id="42n-uC-FG0"/>
+                                    <constraint firstAttribute="trailing" secondItem="gTh-gL-0bJ" secondAttribute="trailing" constant="20" id="B3y-v0-ncA"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fhv-Z4-38H" secondAttribute="trailing" constant="20" id="K1k-Lx-Q1D"/>
+                                    <constraint firstAttribute="bottom" secondItem="Fhv-Z4-38H" secondAttribute="bottom" constant="50" id="LFO-EJ-xXh"/>
+                                    <constraint firstItem="Fhv-Z4-38H" firstAttribute="leading" secondItem="bZJ-X4-dHa" secondAttribute="leading" constant="20" id="XVa-Af-8Kv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bZJ-X4-dHa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6oe-5k-b5T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bZJ-X4-dHa" secondAttribute="bottom" id="7Mj-i9-Zt4"/>
+                            <constraint firstItem="bZJ-X4-dHa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QGV-Kt-Ecp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bZJ-X4-dHa" secondAttribute="trailing" id="p86-AR-zpw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="vBackground" destination="bZJ-X4-dHa" id="7cf-8q-ijX"/>
+                        <outlet property="vScanner" destination="gTh-gL-0bJ" id="RKl-20-J39"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
